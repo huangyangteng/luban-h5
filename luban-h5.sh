@@ -4,7 +4,7 @@
  # @Author: ly525
  # @Date: 2020-01-10 22:23:34
  # @LastEditors  : ly525
- # @LastEditTime : 2020-01-12 11:57:54
+ # @LastEditTime : 2020-01-12 12:09:18
  # @FilePath: /luban-h5/luban-h5.sh
  # @Github: https://github.com/ly525/luban-h5
  # @Description: Do not edit
@@ -68,6 +68,7 @@ luban_h5_version() {
 luban_h5_clean() {
   luban_h5_stop
   cd back-end/h5-api && rm -rf node_modules .cache build
+  echo "clean h5-api [node_modules .cache build] finished"
 }
 
 luban_h5_init() {
